@@ -11,14 +11,14 @@ Pour un projet de taille moyenne, une panne initiale de l'ACC peut prendre de 20
 Comment exécuter Test Analytics
 ----------------
 
-Dans un container
+Dans un container (Recommandé)
 ----------------
 Vous avez besoin de [Docker Compose](https://docs.docker.com/compose/) pour build ce projet.
 
     docker-compose build testanalytics
     docker-compose up testanalytics
 
-#### OR
+#### OU ALORS
 
 Comment faire le build?
 ----------------
