@@ -1,7 +1,7 @@
 Test Analytics
 =================
 
-Fork du projet Google Test Analytics ](https://testing.googleblog.com/2011/10/google-test-analytics-now-in-open.html).
+Fork du projet [Google Test Analytics](https://testing.googleblog.com/2011/10/google-test-analytics-now-in-open.html).
 
 Test Analytics comprend deux parties principales: d'abord et avant tout, c'est un outil étape par étape pour créer une matrice ACC qui est plus rapide et beaucoup plus simple que les feuilles de calcul Google que nous utilisions avant que l'outil n'existe. Il fournit également des visualisations de la matrice et des risques associés à vos capacités ACC qui étaient difficiles ou impossibles à faire dans une simple feuille de calcul.
 
