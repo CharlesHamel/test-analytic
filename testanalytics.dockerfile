@@ -11,7 +11,7 @@ RUN apt-get update \
 	&& curl -LOk https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.tar.gz \
 	&& tar -zxf apache-maven-3.5.0-bin.tar.gz -C /usr/local/ \
 	&& ln -s /usr/local/apache-maven-3.5.0/bin/mvn /usr/bin/mvn \
-	&& git clone https://github.com/CharlesHamel/google-test-analytics.git testanalytics \
+	&& git clone https://github.com/CharlesHamel/test-analytic.git testanalytics \
 	&& cd testanalytics \
 	&& mvn package \
 	&& mvn appengine:devserver
