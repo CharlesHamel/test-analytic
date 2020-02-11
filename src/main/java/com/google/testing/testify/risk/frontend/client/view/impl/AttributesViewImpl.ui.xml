@@ -1,0 +1,24 @@
+<ui:UiBinder
+    xmlns:ui='urn:ui:com.google.gwt.uibinder'
+    xmlns:gwt='urn:import:com.google.gwt.user.client.ui'
+    xmlns:ttywidgets='urn:import:com.google.testing.testify.risk.frontend.client.view.widgets'>
+
+  <!-- Attributes -->
+  <gwt:VerticalPanel ui:styleName="tty-Page tty-AttributesPage">
+    <ttywidgets:PageSectionVerticalPanel headerText="Attributes">
+
+      <gwt:FlowPanel ui:styleName="tty-PageIntroText">
+        <gwt:InlineLabel>Les attributs sont des façons dont un spécialiste du marketing décrirait votre application, tels que "Rapide" ou "Securitaire".  Les attributs dans le modèle ACC vous permettent de mapper les capacités aux besoins de l'entreprise.</gwt:InlineLabel>
+        <gwt:Anchor ui:styleName="tty-InlineAnchor" target="_blank" href="http://code.google.com/p/test-analytics/wiki/InAppDocumentation#Attributes">En savoir plus</gwt:Anchor>
+      </gwt:FlowPanel>
+
+      <gwt:HorizontalPanel ui:styleName="tty-ItemContainer" ui:field="addNewAttributePanel" visible="false">
+        <gwt:TextBox ui:field="newAttributeName" />
+        <gwt:Button ui:field="addNewAttributeButton">Ajouter</gwt:Button>
+      </gwt:HorizontalPanel>
+
+      <ttywidgets:SortableVerticalPanel ui:field="attributesPanel" />
+
+    </ttywidgets:PageSectionVerticalPanel>
+  </gwt:VerticalPanel>
+</ui:UiBinder>

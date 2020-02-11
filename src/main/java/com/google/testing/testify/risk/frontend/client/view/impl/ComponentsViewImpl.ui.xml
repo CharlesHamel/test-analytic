@@ -1,0 +1,24 @@
+<ui:UiBinder
+    xmlns:ui='urn:ui:com.google.gwt.uibinder'
+    xmlns:gwt='urn:import:com.google.gwt.user.client.ui'
+    xmlns:ttywidgets='urn:import:com.google.testing.testify.risk.frontend.client.view.widgets'>
+
+  <!-- Components -->
+  <gwt:VerticalPanel ui:styleName="tty-Page tty-ComponentsPage">
+    <ttywidgets:PageSectionVerticalPanel headerText="Components">
+
+      <gwt:FlowPanel ui:styleName="tty-PageIntroText">
+        <gwt:InlineLabel>Les composants sont les «pièces mobiles» de votre application. En règle générale, les composants sont les bibliothèques principales, les sources de données, des parties de la base de code, etc.</gwt:InlineLabel>
+        <gwt:Anchor ui:styleName="tty-InlineAnchor" target="_blank" href="http://code.google.com/p/test-analytics/wiki/InAppDocumentation#Components">En savoir plus</gwt:Anchor>
+      </gwt:FlowPanel>
+
+      <gwt:HorizontalPanel ui:styleName="tty-ItemContainer" ui:field="addNewComponentPanel" visible="false">
+        <gwt:TextBox ui:field="newComponentName" />
+        <gwt:Button ui:field="addNewComponentButton">Ajouter</gwt:Button>
+      </gwt:HorizontalPanel>
+
+      <ttywidgets:SortableVerticalPanel ui:field="componentsPanel" />
+
+    </ttywidgets:PageSectionVerticalPanel>
+  </gwt:VerticalPanel>
+</ui:UiBinder>

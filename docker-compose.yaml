@@ -1,0 +1,17 @@
+version: "3.5"
+networks:
+  testanalytics:
+    driver: bridge
+    name: testanalytics
+services:
+  testanalytics:
+    build:
+      context: .
+      dockerfile: testanalytics.dockerfile
+    container_name: testanalytics
+    ports:
+      - "8080:8080"
+    networks:
+      testanalytics:
+        aliases:
+          - testanalytics
