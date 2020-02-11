@@ -1,47 +1,52 @@
-Google Test Analytics
+Test Analytics
 =================
 
-This is a fork of the [Google Test Analytics project](https://testing.googleblog.com/2011/10/google-test-analytics-now-in-open.html).
+Fork du projet Google Test Analytics ](https://testing.googleblog.com/2011/10/google-test-analytics-now-in-open.html).
 
-How to run Google Test Analytics
+Test Analytics comprend deux parties principales: d'abord et avant tout, c'est un outil étape par étape pour créer une matrice ACC qui est plus rapide et beaucoup plus simple que les feuilles de calcul Google que nous utilisions avant que l'outil n'existe. Il fournit également des visualisations de la matrice et des risques associés à vos capacités ACC qui étaient difficiles ou impossibles à faire dans une simple feuille de calcul.
+
+Pour un projet de taille moyenne, une panne initiale de l'ACC peut prendre de 20 minutes à une heure. Pendant ce temps, vous définirez les trois parties du modèle ACC pour votre projet: Attributs, Composants et Capacités.
+
+
+Comment exécuter Test Analytics
 ----------------
 
-Using the container
+Dans un container
 ----------------
-You need [Docker Compose](https://docs.docker.com/compose/) to build this project.
+Vous avez besoin de [Docker Compose](https://docs.docker.com/compose/) pour build ce projet.
 
     docker-compose build testanalytics
     docker-compose up testanalytics
 
 #### OR
 
-How to build?
+Comment faire le build?
 ----------------
-You need [Maven](https://maven.apache.org/) to build this project.
+Vous avez besoin de [Maven](https://maven.apache.org/) pour build ce projet.
 
-1. Clone this repo
-2. Run 
+1. Clonez ce repo
+2. Run
 >mvn package
 
-How to run a development server?
+Comment exécuter sur un serveur de développement?
 -----------------
 
 You can take a tour through test-analytics-ng by deploying it to a local Jetty instance.
 
 >mvn appengine:devserver
 
-Navigate to http://localhost:8080
-The admin console is running at http://localhost:8080/_ah/admin
+Aller vers http://localhost:8080
+La console d'administration s'exécute sur http://localhost:8080/_ah/admin
 
 
-Requirements
+Requis
 -----------------
 
-I have successfully built and run this version of test-analytics using Java 8 and Maven 3.5. It does **not** build with newer versions of Java. There is a [pull request](https://github.com/martinschneider/google-test-analytics/pull/1) to upgrade the underlying frameworks and support Java 13. Feel free to contribute!
+Cette version de test-analytics se crée et s'exécute en utilisant Java 8 et Maven 3.5. Il ne ** build ** pas avec les nouvelles versions de Java. Il existe une [pull request] (https://github.com/martinschneider/google-test-analytics/pull/1) pour mettre à niveau les frameworks sous-jacents et prendre en charge Java 13. N'hésitez pas à contribuer!
 
-Deploying test-analytics-ng in AppScale
+Veuillez noter que cette version a complètement été traduite en français
+
+Déploiement de test-analytics-ng dans AppScale
 -------
 
-AppScale (http://www.appscale.com/) is an open-source GAE (Google App Engine) implementation. You can deploy and use test-analytics-ng in it.
-
-How-to coming soon. 
+AppScale (http://www.appscale.com/) est une implémentation open source GAE (Google App Engine). Vous pouvez y déployer et utiliser test-analytics-ng.
