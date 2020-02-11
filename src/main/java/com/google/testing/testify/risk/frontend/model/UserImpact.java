@@ -22,10 +22,10 @@ package com.google.testing.testify.risk.frontend.model;
  */
 public enum UserImpact {
   NA (-2, "n/a"),
-  MINIMAL (0, "Minimal"),
-  SOME (1, "Some"),
-  CONSIDERABLE (2, "Considerable"),
-  MAXIMAL (3, "Maximal");
+  MINIMAL (0, "Mineur"),
+  SOME (1, "Moyen"),
+  CONSIDERABLE (2, "Considérable"),
+  MAXIMAL (3, "Critique");
 
   final int ordinal;
   final String description;

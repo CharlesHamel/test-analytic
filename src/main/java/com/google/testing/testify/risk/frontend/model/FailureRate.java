@@ -21,11 +21,11 @@ package com.google.testing.testify.risk.frontend.model;
  * @author chrsmith@google.com (Chris Smith)
  */
 public enum FailureRate {
-  NA (-2, "n/a"),
-  VERY_RARELY (0, "Rarely"),
-  SELDOM (1, "Seldom"),
-  OCCASIONALLY (2, "Occasionally"),
-  OFTEN (3, "Often");
+  NA (-2, "N/A"),
+  VERY_RARELY (0, "Rarement"),
+  SELDOM (1, "Aléatoirement"),
+  OCCASIONALLY (2, "Occasionnellement"),
+  OFTEN (3, "Souvent");
 
   private final int ordinal;
   private final String description;

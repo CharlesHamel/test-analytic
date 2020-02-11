@@ -61,7 +61,7 @@ public class ProjectDataViewImpl extends Composite {
 
  public ProjectDataViewImpl() {
    initWidget(uiBinder.createAndBindUi(this));
-   dataSummary.setText("No data provided yet.");
+   dataSummary.setText("Pas de données encore fournies.");
  }
 
  /** Sets the page header and intro text. */
@@ -72,13 +72,13 @@ public class ProjectDataViewImpl extends Composite {
 
  public void displayData(List<UploadedDatum> data) {
    if (data.size() == 0) {
-     dataSummary.setText("No items have been uploaded.");
+     dataSummary.setText("Aucun élément n'a été téléchargé.");
      return;
    }
 
    UploadedDatum firstItem = data.get(0);
    dataSummary.setText(
-     "Showing " + Integer.toString(data.size()) + " " + firstItem.getDatumType().getPlural());
+     "Affiche " + Integer.toString(data.size()) + " " + firstItem.getDatumType().getPlural());
 
    dataGrid.clear();
    // Header row + one for each bug x datum, Attribute, Component, Capability
@@ -86,9 +86,9 @@ public class ProjectDataViewImpl extends Composite {
 
    // Set grid headers.
    dataGrid.setWidget(0, 0, new Label(firstItem.getDatumType().getPlural()));
-   dataGrid.setWidget(0, 1, new Label("Attribute"));
-   dataGrid.setWidget(0, 2, new Label("Component"));
-   dataGrid.setWidget(0, 3, new Label("Capability"));
+   dataGrid.setWidget(0, 1, new Label("Attribut"));
+   dataGrid.setWidget(0, 2, new Label("Composant"));
+   dataGrid.setWidget(0, 3, new Label("Capacité"));
 
    dataGrid.getWidget(0, 0).addStyleName(GRID_HEADER_CSS_STYLE);
    dataGrid.getWidget(0, 1).addStyleName(GRID_HEADER_CSS_STYLE);

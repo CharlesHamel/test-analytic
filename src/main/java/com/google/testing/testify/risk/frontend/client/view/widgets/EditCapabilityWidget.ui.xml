@@ -20,7 +20,7 @@
               <table class="tty-EditCapabilityTable">
                 <tr>
                   <td>
-                    <gwt:Label>Name:</gwt:Label>
+                    <gwt:Label>Nom:</gwt:Label>
                   </td>
                   <td colspan="3">
                     <gwt:TextBox ui:field="capabilityName" />
@@ -38,7 +38,7 @@
                </tr>
                <tr>
                  <td colspan="4">
-                    <gwt:Label>Frequency of Failure:</gwt:Label>
+                    <gwt:Label>Fréquence d'échec:</gwt:Label>
                  </td>
                </tr>
                <tr>
@@ -58,13 +58,13 @@
                 </tr>
                 <tr>
                   <td>
-                    <gwt:Label>Attribute:</gwt:Label>
+                    <gwt:Label>Attribut:</gwt:Label>
                   </td>
                   <td>
                     <gwt:ListBox ui:field="attributeBox" />
                   </td>
                   <td>
-                    <gwt:Label>Component:</gwt:Label>
+                    <gwt:Label>Composant:</gwt:Label>
                   </td>
                   <td>
                     <gwt:ListBox ui:field="componentBox" />
@@ -73,15 +73,15 @@
                 <tr>
                   <td colspan="3" align="right">
                     <gwt:HorizontalPanel addStyleNames="tty-EditCapabilityButtonPanel" ui:field="savedPanel" visible="false">
-                      <gwt:Label>Changes saved</gwt:Label>
+                      <gwt:Label>Changements sauvegardés</gwt:Label>
                       <gwt:Image ui:url="/images/bugstate-closed.png" />
                     </gwt:HorizontalPanel>
                   </td>
                   <td align="right">
                     <!-- Save button area is invisible unless the user has edit access. -->
                     <gwt:HorizontalPanel addStyleNames="tty-EditCapabilityButtonPanel" ui:field="buttonPanel" visible="false">
-                      <gwt:Button ui:field="cancelButton">Cancel</gwt:Button>
-                      <gwt:Button ui:field="saveButton">Save</gwt:Button>
+                      <gwt:Button ui:field="cancelButton">Annuler</gwt:Button>
+                      <gwt:Button ui:field="saveButton">Enregistrer</gwt:Button>
                     </gwt:HorizontalPanel>
                   </td>
                 </tr>
