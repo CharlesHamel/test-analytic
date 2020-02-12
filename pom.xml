@@ -101,7 +101,7 @@
       <plugin>
         <groupId>com.google.appengine</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
-        <version>1.8.4</version>
+        <version>1.8.4-maven3.0</version>
         <configuration>
           <jvmFlags>
             <jvmFlag>-Xdebug</jvmFlag>
