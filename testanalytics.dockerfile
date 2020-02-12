@@ -13,7 +13,7 @@ RUN apt-get update \
 	&& ln -s /usr/local/apache-maven-3.5.0/bin/mvn /usr/bin/mvn \
 	&& git clone https://github.com/CharlesHamel/test-analytic.git testanalytics \
 	&& cd testanalytics \
-	&& mvn package \
-	&& mvn appengine:devserver
+	&& mvn package
+CMD ["mvn", "appengine:devserver"]
 
 
