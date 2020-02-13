@@ -1,5 +1,6 @@
 FROM ubuntu:18.04
 MAINTAINER developer@cognibox.com
+EXPOSE 8080
 RUN apt-get update \
   && apt-get install -y -qq wget unzip python \
   && apt-get install -y --no-install-recommends apt-utils \
@@ -18,5 +19,4 @@ RUN apt-get update \
   && wget https://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.zip && unzip google-cloud-sdk.zip && rm google-cloud-sdk.zip \
   && google-cloud-sdk/install.sh --usage-reporting=true --path-update=true --bash-completion=true --rc-path=/.bashrc \
   && mvn package
-CMD ["EXPOSE", "8080"]
 CMD ["mvn", "appengine:devserver"]
