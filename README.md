@@ -30,7 +30,7 @@ Vous avez besoin de [Maven](https://maven.apache.org/) pour build ce projet.
 Comment exécuter sur un serveur de développement?
 -----------------
 
-You can take a tour through test-analytics-ng by deploying it to a local Jetty instance.
+Vous pouvez faire le tour de test-analytics-ng en le déployant sur une instance Jetty locale.
 
 >mvn appengine:devserver
 
