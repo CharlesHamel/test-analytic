@@ -10,6 +10,18 @@
 
   <name>test-analytics</name>
 
+  <settings>
+    <proxies>
+      <proxy>
+        <id>myproxy</id>
+        <active>true</active>
+        <protocol>http</protocol>
+        <host>*</host>
+        <port>8080</port>
+      </proxy>
+    </proxies>
+  </settings>
+
   <pluginRepositories>
     <pluginRepository>
       <id>has gwt-dnd 3.1.1</id>
@@ -95,20 +107,27 @@
   </dependencies>
 
 
-  <!-- Change appengine Maven plugin version to 1.8.4-maven3.0 if Maven < 3.1 is used --> 
+
+
+  <!-- Change appengine Maven plugin version to 1.9.10-maven3.0 if Maven < 3.1 is used --> 
   <build>
     <plugins>
       <plugin>
         <groupId>com.google.appengine</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
-        <version>1.8.4</version>
+        <version>1.9.10</version>
         <configuration>
           <jvmFlags>
             <jvmFlag>-Xdebug</jvmFlag>
             <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n</jvmFlag>
           </jvmFlags>
-        </configuration>
+
+          <enableJarClasses>false</enableJarClasses>
+            <port>8181</port>
+            <address>0.0.0.0</address>
+          </configuration>
       </plugin>
+
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
 	      <version>2.16</version>
@@ -119,6 +138,7 @@
         </configuration>
       </plugin>
       <plugin>
+
         <groupId>org.datanucleus</groupId>
         <artifactId>maven-datanucleus-plugin</artifactId>
         <version>1.1.4</version>
