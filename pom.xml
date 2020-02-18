@@ -10,18 +10,6 @@
 
   <name>test-analytics</name>
 
-  <settings>
-    <proxies>
-      <proxy>
-        <id>myproxy</id>
-        <active>true</active>
-        <protocol>http</protocol>
-        <host>*</host>
-        <port>8080</port>
-      </proxy>
-    </proxies>
-  </settings>
-
   <pluginRepositories>
     <pluginRepository>
       <id>has gwt-dnd 3.1.1</id>
