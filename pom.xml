@@ -105,10 +105,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-
-
-
   <!-- Change appengine Maven plugin version to 1.9.10-maven3.0 if Maven < 3.1 is used --> 
   <build>
     <plugins>
@@ -117,12 +113,7 @@
         <artifactId>appengine-maven-plugin</artifactId>
         <version>1.9.10</version>
         <configuration>
-          <jvmFlags>
-            <jvmFlag>-Xdebug</jvmFlag>
-            <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n</jvmFlag>
-          </jvmFlags>
-
-          <enableJarClasses>false</enableJarClasses>
+            <enableJarClasses>false</enableJarClasses>
             <port>8181</port>
             <address>0.0.0.0</address>
           </configuration>
